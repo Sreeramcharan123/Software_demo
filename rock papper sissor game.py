@@ -32,42 +32,6 @@ def rps(win, lose, user):
     elif user == 3 and computer == 2:
         var.set("You chose Scissors, \n computer chose Paper. \nYou win")
         wins.set(wins.get() + 1)
-        
-    
-        
-    
-    elif user == 1 and computer == 4:
-        var.set("You chose Rock,  \ncomputer chose Spock. \nYou lose")
-        lose +=1
-        wins.set(wins.get() - 1)
-    elif user == 2 and computer == 4:
-        var.set("You chose Paper,\n computer chose Spock. \nYou win")
-        wins.set(wins.get() + 1)
-        
-    elif user == 3 and computer == 4:
-        var.set("You chose Scissors,\n computer chose Spock. \nYou lose")
-        lose +=1
-        wins.set(wins.get() - 1)
-    elif user == 5 and computer == 4:
-        var.set("You chose Lizard, \ncomputer chose Spock. \nYou win")
-        wins.set(wins.get() + 1)
-        
-    elif user == 1 and computer == 5:
-        var.set("You chose Rock, \ncomputer chose Lizard. \nYou win")
-        wins.set(wins.get() + 1)
-        
-    elif user == 2 and computer == 5:
-        var.set("You chose Paper, \ncomputer chose Lizard. \nYou lose")
-        lose +=1
-        wins.set(wins.get() - 1)
-    elif user == 3 and computer == 5:
-        var.set("You chose Scissors,\n computer chose Lizard. \nYou win")
-        wins.set(wins.get() + 1)
-        
-    elif user == 4 and computer == 5:
-        var.set("You chose Spock, \ncomputer chose Lizard. \nYou lose")
-        lose +=1
-        wins.set(wins.get() - 1)  
     else:
         var.set("Thanks for playing. \nYou have " + str(win) + " wins and " + str(lose) + " losses.")
 
